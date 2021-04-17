@@ -1,0 +1,41 @@
+apiVersion: v1
+entries:
+  bookinfo:
+  - apiVersion: v2
+    appVersion: 0.16.2
+    created: "2021-04-16T21:50:18.545485-07:00"
+    dependencies:
+    - condition: ratings.enabled
+      name: ratings
+      repository: file://charts/ratings
+      version: v1
+    - condition: details.enabled
+      name: details
+      repository: file://charts/details
+      version: v1
+    - condition: productpage.enabled
+      name: productpage
+      repository: file://charts/productpage
+      version: v1
+    - condition: reviews.enabled
+      name: reviews
+      repository: file://charts/reviews
+      version: v1
+    digest: db8833324ad3213559ae0b21eba34939400c1d255d3dc6e398875ccf89548fe3
+    name: bookinfo
+    type: application
+    urls:
+    - https://nitishm.github.io/charts/bookinfo-v1.tgz
+    version: v1
+  helm-controller:
+  - apiVersion: v2
+    appVersion: v0.9.0
+    created: "2021-04-16T21:50:18.547116-07:00"
+    description: A Helm chart for Kubernetes
+    digest: 757c8a522714c9009adda0b3cf01d3ec812fe067f5388c30770959c20c8b2b02
+    name: helm-controller
+    type: application
+    urls:
+    - https://nitishm.github.io/charts/helm-controller-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-04-16T21:50:18.541222-07:00"
