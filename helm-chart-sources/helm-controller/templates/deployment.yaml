@@ -41,8 +41,9 @@ spec:
               fieldRef:
                 fieldPath: metadata.namespace
         args:
+          - --concurrent={{ .Values.concurrent }}
           - --watch-all-namespaces
-          - --log-level=info
+          - --log-level=debug
           - --log-encoding=json
           - --enable-leader-election
         readinessProbe:
