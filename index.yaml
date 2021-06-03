@@ -3,7 +3,33 @@ entries:
   bookinfo:
   - apiVersion: v2
     appVersion: 0.16.2
-    created: "2021-05-14T12:57:14.69643-07:00"
+    created: "2021-06-02T20:45:22.991261-05:00"
+    dependencies:
+    - condition: ratings.enabled
+      name: ratings
+      repository: file://charts/ratings
+      version: v1
+    - condition: details.enabled
+      name: details
+      repository: file://charts/details
+      version: v1
+    - condition: productpage.enabled
+      name: productpage
+      repository: file://charts/productpage
+      version: v1
+    - condition: reviews.enabled
+      name: reviews
+      repository: file://charts/reviews
+      version: v1
+    digest: 2fb12acc58b11564fbc5c0d9c9a1824d75e5788aac885bcb355be2b95e26f7ea
+    name: bookinfo
+    type: application
+    urls:
+    - bookinfo-v2.tgz
+    version: v2
+  - apiVersion: v2
+    appVersion: 0.16.2
+    created: "2021-06-02T20:45:22.989965-05:00"
     dependencies:
     - condition: ratings.enabled
       name: ratings
@@ -25,27 +51,27 @@ entries:
     name: bookinfo
     type: application
     urls:
-    - https://nitishm.github.io/charts/bookinfo-v1.tgz
+    - bookinfo-v1.tgz
     version: v1
   helm-controller:
   - apiVersion: v2
     appVersion: v0.9.0
-    created: "2021-05-14T12:57:14.70215-07:00"
+    created: "2021-06-02T20:45:22.994363-05:00"
     description: A Helm chart for Kubernetes
     digest: 35a459f597dfd7a9075dded9eada1d545fe74e86bddcb518e13442d78d66fd4a
     name: helm-controller
     type: application
     urls:
-    - https://nitishm.github.io/charts/helm-controller-0.1.1.tgz
+    - helm-controller-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
     appVersion: v0.9.0
-    created: "2021-05-14T12:57:14.700361-07:00"
+    created: "2021-06-02T20:45:22.992405-05:00"
     description: A Helm chart for Kubernetes
     digest: 757c8a522714c9009adda0b3cf01d3ec812fe067f5388c30770959c20c8b2b02
     name: helm-controller
     type: application
     urls:
-    - https://nitishm.github.io/charts/helm-controller-0.1.0.tgz
+    - helm-controller-0.1.0.tgz
     version: 0.1.0
-generated: "2021-05-14T12:57:14.694809-07:00"
+generated: "2021-06-02T20:45:22.987718-05:00"
