@@ -1,0 +1,9 @@
+dependencies:
+- name: mongodb
+  repository: ""
+  version: 0.1.0
+- name: nats
+  repository: https://nats-io.github.io/k8s/helm/charts/
+  version: 0.7.4
+digest: sha256:6edae89ae027002f67ff0a13ebba7313eac224497e5c617de7ba7ad65eff3172
+generated: "2021-07-08T05:38:02.319679433Z"
