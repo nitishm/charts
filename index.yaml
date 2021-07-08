@@ -3,9 +3,9 @@ entries:
   ambassador:
   - apiVersion: v1
     appVersion: 1.13.6
-    created: "2021-07-08T11:47:44.7772-07:00"
+    created: "2021-07-08T12:51:35.692156-07:00"
     description: A Helm chart for Datawire Ambassador
-    digest: 0e1ae8412d1690776672983dc7a9a2c0575d002d880711a3dfe966641f0d7728
+    digest: ac8946d5b345b5b4c2378a1d9ade55d48b290e97dad059c25db61790b5432cee
     home: https://www.getambassador.io/
     icon: https://www.getambassador.io/images/logo.png
     keywords:
@@ -31,7 +31,7 @@ entries:
     version: 6.7.9
   - apiVersion: v1
     appVersion: 1.12.1
-    created: "2021-07-08T11:47:44.77386-07:00"
+    created: "2021-07-08T12:51:35.688228-07:00"
     description: A Helm chart for Datawire Ambassador
     digest: 8044350cc216a2c53ab84f3b2f314357d3e39bd9dd326617308d4570e58b59f1
     home: https://www.getambassador.io/
@@ -60,7 +60,7 @@ entries:
   bookinfo:
   - apiVersion: v2
     appVersion: 0.16.2
-    created: "2021-07-08T11:47:44.780595-07:00"
+    created: "2021-07-08T12:51:35.695342-07:00"
     dependencies:
     - condition: ratings.enabled
       name: ratings
@@ -78,7 +78,7 @@ entries:
       name: reviews
       repository: file://charts/reviews
       version: v1
-    digest: c080d3432e1cd5937d54bb36a9513bafb95ce55236c5866509ca46c39d7d052a
+    digest: 0b493bd6cd35197de3501381effb54611f1fe450e41de566f7b2cbc102cf42fc
     name: bookinfo
     type: application
     urls:
@@ -86,7 +86,7 @@ entries:
     version: v2
   - apiVersion: v2
     appVersion: 0.16.2
-    created: "2021-07-08T11:47:44.778817-07:00"
+    created: "2021-07-08T12:51:35.694033-07:00"
     dependencies:
     - condition: ratings.enabled
       name: ratings
@@ -113,7 +113,7 @@ entries:
   gitea:
   - apiVersion: v2
     appVersion: 1.14.2
-    created: "2021-07-08T11:47:44.790142-07:00"
+    created: "2021-07-08T12:51:35.709083-07:00"
     dependencies:
     - condition: gitea.cache.builtIn.enabled
       name: memcached
@@ -132,7 +132,7 @@ entries:
       repository: https://charts.bitnami.com/bitnami
       version: 8.0.0
     description: Gitea Helm chart for Kubernetes
-    digest: 95bbcd82ce5feeea1e96f5ee224bb00039a7055faa675acbee23859cedff64ad
+    digest: 2e83f7ef250950be418d04ee807e6933ed3eb3ebd1b1f4775819993d85df53b5
     icon: https://docs.gitea.io/images/gitea.png
     keywords:
     - git
@@ -162,9 +162,9 @@ entries:
   helm-controller:
   - apiVersion: v2
     appVersion: v0.9.0
-    created: "2021-07-08T11:47:44.793392-07:00"
+    created: "2021-07-08T12:51:35.713664-07:00"
     description: A Helm chart for Kubernetes
-    digest: f84b989ce6a123b0b397503eb6575ac6ef363eb15facd166f5a6c2146914c1be
+    digest: e09891cb33ef1a7597d59a9791fd0fe546b782a5949a948555f5334f24da68be
     name: helm-controller
     type: application
     urls:
@@ -172,7 +172,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: v0.9.0
-    created: "2021-07-08T11:47:44.792276-07:00"
+    created: "2021-07-08T12:51:35.711215-07:00"
     description: A Helm chart for Kubernetes
     digest: 757c8a522714c9009adda0b3cf01d3ec812fe067f5388c30770959c20c8b2b02
     name: helm-controller
@@ -180,4 +180,4 @@ entries:
     urls:
     - https://nitishm.github.io/charts/helm-controller-0.1.0.tgz
     version: 0.1.0
-generated: "2021-07-08T11:47:44.76616-07:00"
+generated: "2021-07-08T12:51:35.680189-07:00"
