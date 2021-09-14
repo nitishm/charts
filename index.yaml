@@ -3,7 +3,7 @@ entries:
   ambassador:
   - apiVersion: v1
     appVersion: 1.13.6
-    created: "2021-06-13T13:20:46.240937-07:00"
+    created: "2021-09-13T22:43:52.844304-07:00"
     description: A Helm chart for Datawire Ambassador
     digest: 887541d04ef68054e9ed834ce72dd43985d7b8ad1b9d734449b76ad933d3c682
     home: https://www.getambassador.io/
@@ -30,8 +30,36 @@ entries:
     - ambassador-6.7.9.tgz
     version: 6.7.9
   - apiVersion: v1
+    appVersion: 1.13.0
+    created: "2021-09-13T22:43:52.83934-07:00"
+    description: A Helm chart for Datawire Ambassador
+    digest: e9c1260d6c2519b1ebfb51b1ccca30239d6450be74130ce3bf41630092917558
+    home: https://www.getambassador.io/
+    icon: https://www.getambassador.io/images/logo.png
+    keywords:
+    - api gateway
+    - ambassador
+    - datawire
+    - envoy
+    maintainers:
+    - email: markus@maga.se
+      name: flydiverny
+    - email: flynn@datawire.io
+      name: kflynn
+    - email: nkrause@datawire.io
+      name: nbkrause
+    - email: lukeshu@datawire.io
+      name: lukeshu
+    name: ambassador
+    sources:
+    - https://github.com/datawire/ambassador
+    - https://github.com/prometheus/statsd_exporter
+    urls:
+    - ambassador-6.7.0.tgz
+    version: 6.7.0
+  - apiVersion: v1
     appVersion: 1.12.1
-    created: "2021-06-13T13:20:46.228951-07:00"
+    created: "2021-09-13T22:43:52.83318-07:00"
     description: A Helm chart for Datawire Ambassador
     digest: 8044350cc216a2c53ab84f3b2f314357d3e39bd9dd326617308d4570e58b59f1
     home: https://www.getambassador.io/
@@ -60,7 +88,7 @@ entries:
   bookinfo:
   - apiVersion: v2
     appVersion: 0.16.2
-    created: "2021-06-13T13:20:46.250642-07:00"
+    created: "2021-09-13T22:43:52.848469-07:00"
     dependencies:
     - condition: ratings.enabled
       name: ratings
@@ -86,7 +114,7 @@ entries:
     version: v2
   - apiVersion: v2
     appVersion: 0.16.2
-    created: "2021-06-13T13:20:46.247853-07:00"
+    created: "2021-09-13T22:43:52.845837-07:00"
     dependencies:
     - condition: ratings.enabled
       name: ratings
@@ -113,7 +141,7 @@ entries:
   helm-controller:
   - apiVersion: v2
     appVersion: v0.9.0
-    created: "2021-06-13T13:20:46.258992-07:00"
+    created: "2021-09-13T22:43:52.852377-07:00"
     description: A Helm chart for Kubernetes
     digest: 35a459f597dfd7a9075dded9eada1d545fe74e86bddcb518e13442d78d66fd4a
     name: helm-controller
@@ -123,7 +151,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: v0.9.0
-    created: "2021-06-13T13:20:46.254441-07:00"
+    created: "2021-09-13T22:43:52.850582-07:00"
     description: A Helm chart for Kubernetes
     digest: 757c8a522714c9009adda0b3cf01d3ec812fe067f5388c30770959c20c8b2b02
     name: helm-controller
@@ -131,4 +159,4 @@ entries:
     urls:
     - helm-controller-0.1.0.tgz
     version: 0.1.0
-generated: "2021-06-13T13:20:46.222707-07:00"
+generated: "2021-09-13T22:43:52.827712-07:00"
