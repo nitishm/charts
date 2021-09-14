@@ -3,9 +3,9 @@ entries:
   ambassador:
   - apiVersion: v1
     appVersion: 1.13.6
-    created: "2021-09-13T22:43:52.844304-07:00"
+    created: "2021-09-13T22:44:59.910635-07:00"
     description: A Helm chart for Datawire Ambassador
-    digest: 887541d04ef68054e9ed834ce72dd43985d7b8ad1b9d734449b76ad933d3c682
+    digest: 7af747a72b67c8a7e0405c7fce13b55734d735b15ef8276c7b6ef17f853e416c
     home: https://www.getambassador.io/
     icon: https://www.getambassador.io/images/logo.png
     keywords:
@@ -31,7 +31,7 @@ entries:
     version: 6.7.9
   - apiVersion: v1
     appVersion: 1.13.0
-    created: "2021-09-13T22:43:52.83934-07:00"
+    created: "2021-09-13T22:44:59.90706-07:00"
     description: A Helm chart for Datawire Ambassador
     digest: e9c1260d6c2519b1ebfb51b1ccca30239d6450be74130ce3bf41630092917558
     home: https://www.getambassador.io/
@@ -59,7 +59,7 @@ entries:
     version: 6.7.0
   - apiVersion: v1
     appVersion: 1.12.1
-    created: "2021-09-13T22:43:52.83318-07:00"
+    created: "2021-09-13T22:44:59.901077-07:00"
     description: A Helm chart for Datawire Ambassador
     digest: 8044350cc216a2c53ab84f3b2f314357d3e39bd9dd326617308d4570e58b59f1
     home: https://www.getambassador.io/
@@ -88,7 +88,7 @@ entries:
   bookinfo:
   - apiVersion: v2
     appVersion: 0.16.2
-    created: "2021-09-13T22:43:52.848469-07:00"
+    created: "2021-09-13T22:44:59.913238-07:00"
     dependencies:
     - condition: ratings.enabled
       name: ratings
@@ -106,7 +106,7 @@ entries:
       name: reviews
       repository: file://charts/reviews
       version: v1
-    digest: 2fb12acc58b11564fbc5c0d9c9a1824d75e5788aac885bcb355be2b95e26f7ea
+    digest: 06d683595de070c758d14af8e75c1b5a90fa61e60f0c0697758a48e8023e0626
     name: bookinfo
     type: application
     urls:
@@ -114,7 +114,7 @@ entries:
     version: v2
   - apiVersion: v2
     appVersion: 0.16.2
-    created: "2021-09-13T22:43:52.845837-07:00"
+    created: "2021-09-13T22:44:59.912238-07:00"
     dependencies:
     - condition: ratings.enabled
       name: ratings
@@ -141,9 +141,9 @@ entries:
   helm-controller:
   - apiVersion: v2
     appVersion: v0.9.0
-    created: "2021-09-13T22:43:52.852377-07:00"
+    created: "2021-09-13T22:44:59.91688-07:00"
     description: A Helm chart for Kubernetes
-    digest: 35a459f597dfd7a9075dded9eada1d545fe74e86bddcb518e13442d78d66fd4a
+    digest: 7311b7d6639b5227f2c96ba5044bfe9707fbc4694c7229ebe4d729980a4e3016
     name: helm-controller
     type: application
     urls:
@@ -151,7 +151,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: v0.9.0
-    created: "2021-09-13T22:43:52.850582-07:00"
+    created: "2021-09-13T22:44:59.915824-07:00"
     description: A Helm chart for Kubernetes
     digest: 757c8a522714c9009adda0b3cf01d3ec812fe067f5388c30770959c20c8b2b02
     name: helm-controller
@@ -159,4 +159,16 @@ entries:
     urls:
     - helm-controller-0.1.0.tgz
     version: 0.1.0
-generated: "2021-09-13T22:43:52.827712-07:00"
+  webserver:
+  - apiVersion: v2
+    appVersion: v1.0.0
+    created: "2021-09-13T22:44:59.917501-07:00"
+    digest: 1e60d469353315fd60c08b26fe8e3acb3218c081a1e2109e84ee6a46d738fe99
+    maintainers:
+    - email: nitish.malhotra@gmail.com
+      name: Nitish Malhotra
+    name: webserver
+    urls:
+    - webserver-v1.0.0.tgz
+    version: v1.0.0
+generated: "2021-09-13T22:44:59.896932-07:00"
