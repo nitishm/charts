@@ -9,3 +9,10 @@ reviews:
 
 productpage:
   replicaCount: 1
+
+ambassor:
+  enabled: true
+
+istio:
+  sidecarInjection:
+    enabled: false

@@ -1,0 +1,64 @@
+{{- if .Values.istio.sidecarInjection.enabled }}
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: ns-labeler
+  namespace: default
+  labels:
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+  annotations:
+    helm.sh/hook: pre-install
+    helm.sh/hook-delete-policy: hook-succeeded
+spec:
+  template:
+    spec:
+      containers:
+      - name: labeler
+        image: gcr.io/google_containers/hyperkube:v1.9.7
+        command:
+        - kubectl
+        - label
+        - ns
+        - {{ .Release.Namespace }}
+        - istio-injection=enabled
+      restartPolicy: Never
+      serviceAccountName: ns-labeler-sa
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: ns-labeler-sa
+  namespace: default
+  annotations:
+    helm.sh/hook: pre-install
+    helm.sh/hook-weight: "-10"
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: ns-labeler-cr
+  annotations:
+    helm.sh/hook: pre-install
+    helm.sh/hook-weight: "-10"
+rules:
+- apiGroups: [""] # "" indicates the core API group
+  resources: ["namespaces"]
+  verbs: ["*"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: ns-labeler-crb
+  annotations:
+    helm.sh/hook: pre-install
+    helm.sh/hook-weight: "-10"
+subjects:
+- kind: ServiceAccount
+  name: ns-labeler-sa
+  namespace: default
+roleRef:
+  kind: ClusterRole
+  name: ns-labeler-cr
+  apiGroup: rbac.authorization.k8s.io
+{{- end }}
