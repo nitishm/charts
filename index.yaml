@@ -3,9 +3,9 @@ entries:
   ambassador:
   - apiVersion: v1
     appVersion: 1.13.6
-    created: "2021-09-28T17:28:11.883433-07:00"
+    created: "2021-09-28T17:52:38.360809-07:00"
     description: A Helm chart for Datawire Ambassador
-    digest: cf9dc50f7ffb9697d50ca54c824a1a480fc9174f5c919e690d8cf923d43b1392
+    digest: 87a8951229b31fad0ceaa9d13ae0f4c5dd8bdf7d223c07d4d8ce4f453b42b577
     home: https://www.getambassador.io/
     icon: https://www.getambassador.io/images/logo.png
     keywords:
@@ -31,7 +31,7 @@ entries:
     version: 6.7.9
   - apiVersion: v1
     appVersion: 1.13.0
-    created: "2021-09-28T17:28:11.879695-07:00"
+    created: "2021-09-28T17:52:38.356752-07:00"
     description: A Helm chart for Datawire Ambassador
     digest: e9c1260d6c2519b1ebfb51b1ccca30239d6450be74130ce3bf41630092917558
     home: https://www.getambassador.io/
@@ -59,7 +59,7 @@ entries:
     version: 6.7.0
   - apiVersion: v1
     appVersion: 1.12.1
-    created: "2021-09-28T17:28:11.8726-07:00"
+    created: "2021-09-28T17:52:38.349932-07:00"
     description: A Helm chart for Datawire Ambassador
     digest: 8044350cc216a2c53ab84f3b2f314357d3e39bd9dd326617308d4570e58b59f1
     home: https://www.getambassador.io/
@@ -88,7 +88,7 @@ entries:
   bookinfo:
   - apiVersion: v2
     appVersion: 0.16.2
-    created: "2021-09-28T17:28:11.887949-07:00"
+    created: "2021-09-28T17:52:38.364748-07:00"
     dependencies:
     - condition: ratings.enabled
       name: ratings
@@ -106,7 +106,7 @@ entries:
       name: reviews
       repository: file://charts/reviews
       version: v1
-    digest: 9fe282044dfe6bac5ad17af8553cd7a2596994c19db936bfe4b2d4866b241094
+    digest: dcf11c115898c84fa4ac1524ce3ce0e2530089203b2145d9c4968a465a376e13
     name: bookinfo
     type: application
     urls:
@@ -114,7 +114,7 @@ entries:
     version: v2
   - apiVersion: v2
     appVersion: 0.16.2
-    created: "2021-09-28T17:28:11.886627-07:00"
+    created: "2021-09-28T17:52:38.363639-07:00"
     dependencies:
     - condition: ratings.enabled
       name: ratings
@@ -141,9 +141,9 @@ entries:
   helm-controller:
   - apiVersion: v2
     appVersion: v0.9.0
-    created: "2021-09-28T17:28:11.893524-07:00"
+    created: "2021-09-28T17:52:38.369541-07:00"
     description: A Helm chart for Kubernetes
-    digest: 29a5a257d36ad84613521b4cf7029beaf20703053ba2a3df7104f54886d19567
+    digest: e241aec3140b1d77fe003241bd904616cd68527cbf65dc88308e146887902406
     name: helm-controller
     type: application
     urls:
@@ -151,7 +151,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: v0.9.0
-    created: "2021-09-28T17:28:11.891926-07:00"
+    created: "2021-09-28T17:52:38.368177-07:00"
     description: A Helm chart for Kubernetes
     digest: 757c8a522714c9009adda0b3cf01d3ec812fe067f5388c30770959c20c8b2b02
     name: helm-controller
@@ -162,20 +162,20 @@ entries:
   keptn-addons:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-09-28T17:28:11.894287-07:00"
+    created: "2021-09-28T17:52:38.370111-07:00"
     description: A Helm chart for Keptn add-ons like Keptn job-executor-service, prometheus-service,
       etc.
-    digest: dd880d087f62d6f37cc0fa890b739aff6d4b38e69278ef0d9953d1ecdc535b1d
+    digest: 1fd430b6f2fbef777043cba8140b1badccb47f8bf86e4b3596dae0ed7376a19a
     name: keptn-addons
-    type: library
+    type: application
     urls:
     - https://nitishm.github.io/charts/keptn-addons-0.1.0.tgz
     version: 0.1.0
   webserver:
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2021-09-28T17:28:11.895285-07:00"
-    digest: 6acf2a862a28903df3a9df74b5c7bece6478f63ca2a4a6a55a45251fc51ba8e5
+    created: "2021-09-28T17:52:38.370862-07:00"
+    digest: ec316511298e07a756451e16d924c469e4d4988239aa0cadb99841ef6ddfc64a
     maintainers:
     - email: nitish.malhotra@gmail.com
       name: Nitish Malhotra
@@ -183,4 +183,4 @@ entries:
     urls:
     - https://nitishm.github.io/charts/webserver-v1.0.0.tgz
     version: v1.0.0
-generated: "2021-09-28T17:28:11.866017-07:00"
+generated: "2021-09-28T17:52:38.343004-07:00"
