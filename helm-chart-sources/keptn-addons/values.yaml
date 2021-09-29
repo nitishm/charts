@@ -1,0 +1,4 @@
+prometheus:
+  namespace: prometheus
+  server:
+    name: prometheus-server
