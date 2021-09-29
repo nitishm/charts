@@ -18,5 +18,5 @@ dependencies:
     version: v1
     repository: file://charts/reviews
 type: application
-version: v2
+version: v3
 appVersion: "0.16.2"

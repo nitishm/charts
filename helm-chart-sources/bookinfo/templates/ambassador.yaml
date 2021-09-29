@@ -1,3 +1,4 @@
+{{- if .Values.ambassador.enabled }}
 apiVersion: getambassador.io/v2
 kind: Mapping
 metadata:
@@ -6,3 +7,4 @@ metadata:
 spec:
   prefix: /bookinfo/
   service: http://productpage.bookinfo:9080
+{{- end }}
