@@ -3,9 +3,9 @@ entries:
   ambassador:
   - apiVersion: v1
     appVersion: 1.13.6
-    created: "2021-09-29T10:28:15.784585-07:00"
+    created: "2021-09-29T10:55:46.641111-07:00"
     description: A Helm chart for Datawire Ambassador
-    digest: ce1827d3e57c5324a0a9b0c196b0c264f4df39d1cc366dafad2d0dd2f26c1ea1
+    digest: b997b90d5778e4bad4176594d56610979d09ceef6218d06f6330337873a0f5db
     home: https://www.getambassador.io/
     icon: https://www.getambassador.io/images/logo.png
     keywords:
@@ -31,7 +31,7 @@ entries:
     version: 6.7.9
   - apiVersion: v1
     appVersion: 1.13.0
-    created: "2021-09-29T10:28:15.779562-07:00"
+    created: "2021-09-29T10:55:46.637563-07:00"
     description: A Helm chart for Datawire Ambassador
     digest: e9c1260d6c2519b1ebfb51b1ccca30239d6450be74130ce3bf41630092917558
     home: https://www.getambassador.io/
@@ -59,7 +59,7 @@ entries:
     version: 6.7.0
   - apiVersion: v1
     appVersion: 1.12.1
-    created: "2021-09-29T10:28:15.775221-07:00"
+    created: "2021-09-29T10:55:46.630857-07:00"
     description: A Helm chart for Datawire Ambassador
     digest: 8044350cc216a2c53ab84f3b2f314357d3e39bd9dd326617308d4570e58b59f1
     home: https://www.getambassador.io/
@@ -87,8 +87,8 @@ entries:
     version: 6.6.0
   bookinfo:
   - apiVersion: v2
-    appVersion: 0.16.2
-    created: "2021-09-29T10:28:15.791025-07:00"
+    appVersion: 0.16.3
+    created: "2021-09-29T10:55:46.64485-07:00"
     dependencies:
     - condition: ratings.enabled
       name: ratings
@@ -106,7 +106,7 @@ entries:
       name: reviews
       repository: file://charts/reviews
       version: v1
-    digest: 860511c6880be93e825588fde870a862c3595b688d05f6a89f17674ccd8beeda
+    digest: 9fe29bded812af537a77b50859aa4d5ddb235a00486a235aa418f7c494c90106
     name: bookinfo
     type: application
     urls:
@@ -114,7 +114,7 @@ entries:
     version: v3
   - apiVersion: v2
     appVersion: 0.16.2
-    created: "2021-09-29T10:28:15.78901-07:00"
+    created: "2021-09-29T10:55:46.643747-07:00"
     dependencies:
     - condition: ratings.enabled
       name: ratings
@@ -140,7 +140,7 @@ entries:
     version: v2
   - apiVersion: v2
     appVersion: 0.16.2
-    created: "2021-09-29T10:28:15.786997-07:00"
+    created: "2021-09-29T10:55:46.64245-07:00"
     dependencies:
     - condition: ratings.enabled
       name: ratings
@@ -167,9 +167,9 @@ entries:
   helm-controller:
   - apiVersion: v2
     appVersion: v0.9.0
-    created: "2021-09-29T10:28:15.794605-07:00"
+    created: "2021-09-29T10:55:46.647854-07:00"
     description: A Helm chart for Kubernetes
-    digest: 6124858716593538b4e5a3516a6966b08d106a9521144008f555aab8df755311
+    digest: 8c9a6788c010f808c4cc4c29e517ad3810937c1bfcb6cf77bf37cc2e093054d8
     name: helm-controller
     type: application
     urls:
@@ -177,7 +177,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: v0.9.0
-    created: "2021-09-29T10:28:15.793168-07:00"
+    created: "2021-09-29T10:55:46.646472-07:00"
     description: A Helm chart for Kubernetes
     digest: 757c8a522714c9009adda0b3cf01d3ec812fe067f5388c30770959c20c8b2b02
     name: helm-controller
@@ -188,10 +188,10 @@ entries:
   keptn-addons:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-09-29T10:28:15.795415-07:00"
+    created: "2021-09-29T10:55:46.648505-07:00"
     description: A Helm chart for Keptn add-ons like Keptn job-executor-service, prometheus-service,
       etc.
-    digest: ceb0f51ffc91cd8b8fdaf7da9b216ebc8da4e43e3c62b06c45a085c21053d1a9
+    digest: f2f8413719ad1ed50de79c3c8f3a41840bc281cc6854c2e5a420568c841ccbe8
     name: keptn-addons
     type: application
     urls:
@@ -200,8 +200,8 @@ entries:
   webserver:
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2021-09-29T10:28:15.797233-07:00"
-    digest: c3aa9ba8856804356f53058a121c50cb37cd38260742e1c3e3043cdb2da161e0
+    created: "2021-09-29T10:55:46.649216-07:00"
+    digest: 97db320b7b74d505357ae6a4cc23bee5a0309246cc7219f4b88e57ed516bfaa2
     maintainers:
     - email: nitish.malhotra@gmail.com
       name: Nitish Malhotra
@@ -209,4 +209,4 @@ entries:
     urls:
     - https://nitishm.github.io/charts/webserver-v1.0.0.tgz
     version: v1.0.0
-generated: "2021-09-29T10:28:15.770193-07:00"
+generated: "2021-09-29T10:55:46.62438-07:00"
