@@ -2,3 +2,4 @@ prometheus:
   namespace: prometheus
   server:
     name: prometheus-server
+    port: 80
