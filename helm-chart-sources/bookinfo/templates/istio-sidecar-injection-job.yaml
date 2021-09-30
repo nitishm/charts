@@ -1,4 +1,4 @@
-{{- if .Values.istio.sidecarInjection.enabled }}
+{{- if and .Values.istio.enabled }}
 apiVersion: batch/v1
 kind: Job
 metadata:

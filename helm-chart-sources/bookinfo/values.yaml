@@ -14,5 +14,8 @@ ambassor:
   enabled: true
 
 istio:
-  sidecarInjection:
+  enabled: false
+  fault:
     enabled: false
+    percentage: 80
+    httpStatus: 500

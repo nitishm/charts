@@ -1,0 +1,24 @@
+{{- if and .Values.istio.enabled .Values.istio.fault.enabled }}
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: productpage
+  namespace: {{ .Release.Namespace }} 
+spec:
+  hosts:
+  - example.com
+  gateways: 
+  - bookinfo-gateway
+  http:
+  - route:
+    - destination:
+        host: productpage
+        port:
+          number: 9080
+    fault:
+      abort:
+        httpStatus: {{ .Values.istio.fault.httpStatus }} 
+        percentage:
+          value: {{ .Values.istio.fault.percentage }}
+{{- end }}
