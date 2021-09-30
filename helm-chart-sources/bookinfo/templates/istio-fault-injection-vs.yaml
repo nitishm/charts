@@ -1,4 +1,4 @@
-{{- if and .Values.istio.enabled .Values.istio.fault.enabled }}
+{{- if and .Values.istio.enabled }}
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
@@ -16,9 +16,11 @@ spec:
         host: productpage
         port:
           number: 9080
+{{- if .Values.istio.fault.enabled }}
     fault:
       abort:
         httpStatus: {{ .Values.istio.fault.httpStatus }} 
         percentage:
           value: {{ .Values.istio.fault.percentage }}
+{{- end }}
 {{- end }}
