@@ -152,7 +152,7 @@ spec:
             - name: API
               value: 'ws://api-service:8080/websocket'
             - name: PROMETHEUS_NS
-              value: 'prometheus'
+              value: '{{ .Values.prometheus.namespace }}'
             - name: PROMETHEUS_CM
               value: '{{ .Values.prometheus.server.name }}'
             - name: PROMETHEUS_LABELS
