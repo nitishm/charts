@@ -3,7 +3,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
   name: keptn-prometheus-service
-  namespace: {{ .Values.prometheus.namespace | default "prometheus" }} 
+  namespace: {{ .Release.Namespace }} 
 rules:
   - apiGroups:
       - ""

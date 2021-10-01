@@ -3,9 +3,9 @@ entries:
   ambassador:
   - apiVersion: v1
     appVersion: 1.13.6
-    created: "2021-10-01T11:58:23.413039-07:00"
+    created: "2021-10-01T12:07:16.36102-07:00"
     description: A Helm chart for Datawire Ambassador
-    digest: 90cb132e0dd40f9103e11ae4e6439faed4705bd498630a7bb978548cf032304d
+    digest: 74d5482c96ecdf88f209b47769469cdf99c23fe29ff0cc20ad735c0e06c5c6ed
     home: https://www.getambassador.io/
     icon: https://www.getambassador.io/images/logo.png
     keywords:
@@ -31,7 +31,7 @@ entries:
     version: 6.7.9
   - apiVersion: v1
     appVersion: 1.13.0
-    created: "2021-10-01T11:58:23.40885-07:00"
+    created: "2021-10-01T12:07:16.357364-07:00"
     description: A Helm chart for Datawire Ambassador
     digest: e9c1260d6c2519b1ebfb51b1ccca30239d6450be74130ce3bf41630092917558
     home: https://www.getambassador.io/
@@ -59,7 +59,7 @@ entries:
     version: 6.7.0
   - apiVersion: v1
     appVersion: 1.12.1
-    created: "2021-10-01T11:58:23.395444-07:00"
+    created: "2021-10-01T12:07:16.352209-07:00"
     description: A Helm chart for Datawire Ambassador
     digest: 8044350cc216a2c53ab84f3b2f314357d3e39bd9dd326617308d4570e58b59f1
     home: https://www.getambassador.io/
@@ -88,7 +88,7 @@ entries:
   bookinfo:
   - apiVersion: v2
     appVersion: 0.16.3
-    created: "2021-10-01T11:58:23.421992-07:00"
+    created: "2021-10-01T12:07:16.364664-07:00"
     dependencies:
     - condition: ratings.enabled
       name: ratings
@@ -106,7 +106,7 @@ entries:
       name: reviews
       repository: file://charts/reviews
       version: v1
-    digest: df305a5a586d38b8a06806a76b0a68401dfcbfe43e5259466306dac8d7343918
+    digest: 53bc4959637abf057cad29bb3d7a9da94ab39c7d9a2e8857e86257a904984e03
     name: bookinfo
     type: application
     urls:
@@ -114,7 +114,7 @@ entries:
     version: v3
   - apiVersion: v2
     appVersion: 0.16.2
-    created: "2021-10-01T11:58:23.420659-07:00"
+    created: "2021-10-01T12:07:16.363305-07:00"
     dependencies:
     - condition: ratings.enabled
       name: ratings
@@ -140,7 +140,7 @@ entries:
     version: v2
   - apiVersion: v2
     appVersion: 0.16.2
-    created: "2021-10-01T11:58:23.416643-07:00"
+    created: "2021-10-01T12:07:16.362195-07:00"
     dependencies:
     - condition: ratings.enabled
       name: ratings
@@ -167,9 +167,9 @@ entries:
   helm-controller:
   - apiVersion: v2
     appVersion: v0.9.0
-    created: "2021-10-01T11:58:23.428177-07:00"
+    created: "2021-10-01T12:07:16.367613-07:00"
     description: A Helm chart for Kubernetes
-    digest: 3ac4f3310aec7ed3b24b7a48e13816cc2926db9fc923b0ce7c10001ae185cd99
+    digest: 41da7b7dfb38cf51024e5f8e293852941be3061dcc00636562e34b93746bc091
     name: helm-controller
     type: application
     urls:
@@ -177,7 +177,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: v0.9.0
-    created: "2021-10-01T11:58:23.426702-07:00"
+    created: "2021-10-01T12:07:16.366207-07:00"
     description: A Helm chart for Kubernetes
     digest: 757c8a522714c9009adda0b3cf01d3ec812fe067f5388c30770959c20c8b2b02
     name: helm-controller
@@ -188,10 +188,10 @@ entries:
   keptn-addons:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2021-10-01T11:58:23.428885-07:00"
+    created: "2021-10-01T12:07:16.368252-07:00"
     description: A Helm chart for Keptn add-ons like Keptn job-executor-service, prometheus-service,
       etc.
-    digest: 0f55df8563a81efae29f758dc5eb128bcdabdb305093283e426430fce2afff56
+    digest: 7bea067fc3595661de4683f6fd92f30c030d961971331ab789be2fefda40763d
     name: keptn-addons
     type: application
     urls:
@@ -200,14 +200,14 @@ entries:
   prometheus:
   - apiVersion: v2
     appVersion: 2.26.0
-    created: "2021-10-01T11:58:23.435977-07:00"
+    created: "2021-10-01T12:07:16.374905-07:00"
     dependencies:
     - condition: kubeStateMetrics.enabled
       name: kube-state-metrics
       repository: https://prometheus-community.github.io/helm-charts
       version: 3.5.*
     description: Prometheus is a monitoring system and time series database.
-    digest: 3857f0f6b7bcef44032f5421987926b2b634bde9028b6a240c08c7860a2e3fdf
+    digest: 23dc33968a5a86a46eb49dbaa2d7b65f596452e3ef98c0fa3134c1f222634436
     home: https://prometheus.io/
     icon: https://raw.githubusercontent.com/prometheus/prometheus.github.io/master/assets/prometheus_logo-cb55bb5c346.png
     maintainers:
@@ -235,8 +235,8 @@ entries:
   webserver:
   - apiVersion: v2
     appVersion: v1.0.0
-    created: "2021-10-01T11:58:23.437371-07:00"
-    digest: 214b4d52a7666dfe64863e5ef3efec7457823e4030c59f16f1c0b4de90639f6f
+    created: "2021-10-01T12:07:16.375814-07:00"
+    digest: d75a1ac9c83444147e78a042486f8daac1b12ee112eaaabb33b4582ec056c77c
     maintainers:
     - email: nitish.malhotra@gmail.com
       name: Nitish Malhotra
@@ -244,4 +244,4 @@ entries:
     urls:
     - https://nitishm.github.io/charts/webserver-v1.0.0.tgz
     version: v1.0.0
-generated: "2021-10-01T11:58:23.38415-07:00"
+generated: "2021-10-01T12:07:16.346899-07:00"
