@@ -146,11 +146,11 @@ spec:
             - name: METRICS_SCRAPE_PATH
               value: '/metrics'
             - name: CONFIGURATION_SERVICE
-              value: 'http://configuration-service:8080'
+              value: 'http://configuration-service.{{ .Release.Namespace }}.svc.cluster.local:8080'
             - name: EVENTBROKER
               value: 'http://localhost:8081/event'
             - name: API
-              value: 'ws://api-service:8080/websocket'
+              value: 'ws://api-service{{ .Release.Namespace }}.svc.cluster.local:8080/websocket'
             - name: PROMETHEUS_NS
               value: '{{ .Values.prometheus.namespace }}'
             - name: PROMETHEUS_CM
@@ -188,7 +188,7 @@ spec:
               cpu: "250m"
           env:
             - name: PUBSUB_URL
-              value: 'nats://keptn-nats-cluster'
+              value: 'nats://keptn-nats-cluster{{ .Release.Namespace }}.svc.cluster.local'
             - name: PUBSUB_TOPIC
               value: 'sh.keptn.event.monitoring.configure,sh.keptn.event.get-sli.triggered'
             - name: PUBSUB_RECIPIENT
