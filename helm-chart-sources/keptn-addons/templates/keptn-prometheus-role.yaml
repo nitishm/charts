@@ -3,7 +3,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
   name: keptn-prometheus-service
-  namespace: {{ .Values.prometheus.namespace }} 
+  namespace: {{ .Release.Namespace }} 
 rules:
   - apiGroups:
       - ""
@@ -36,7 +36,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
   name: keptn-prometheus-service
-  namespace: {{ .Values.prometheus.namespace | default "prometheus" }} 
+  namespace: {{ .Release.Namespace }} 
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role
@@ -44,4 +44,4 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: keptn-prometheus-service
-    namespace: {{ .Values.prometheus.namespace }} 
+    namespace: {{ .Release.Namespace }} 
